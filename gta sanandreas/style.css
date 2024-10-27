@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+/*-------------estilização da img de fundo------------*/
+body{
+    background-image: url(img/grove\ street.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*-------------estilização titulo grove street------------*/
+h1{
+    font-family: "Pirata One", system-ui;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -2px;
+    letter-spacing: 3px;
+    font-size: 60px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+/*-------------estilização do card big smook------------*/
+#big{width: 300px;}
+#card_big{
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 500px; 
+    background-color: rgb(255, 255, 255);
+    margin-left: 570px;
+    margin-top: 100px;
+    padding: 10px;
+    position: absolute;
+}
+/*-------------estilização do card ryder------------*/
+#ryder{width: 300px;}
+#card_ryder{
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 500px; 
+    background-color: rgb(255, 255, 255);
+    margin-left: 570px;
+    margin-top: 100px;
+    padding: 10px;
+    position: absolute;
+}
+/*-------------estilização do card cj------------*/
+#cj{width: 300px;}
+#card_cj{
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 500px; 
+    background-color: rgb(255, 255, 255);
+    margin-left: 570px;
+    margin-top: 100px;
+    padding: 10px;
+    position: absolute;
+}
+/*-------------estilização do card sweet------------*/
+#sweet{width: 300px;}
+#card_sweet{
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 500px; 
+    background-color: rgb(255, 255, 255);
+    margin-left: 570px;
+    margin-top: 100px;
+    padding: 10px;
+    position: absolute;
+}
+/*-------------estilização dos textos de cards------------*/
+.text{
+    background-color: white;
+    text-align: center;
+    font-family: "Pirata One", system-ui;
+    font-size: 16px;
+}
+/*-------------estilização do menu------------*/
+.menu{
+    background-color: rgba(255, 255, 255, 0);
+    width: 184px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1320px;
+    margin-top: 10px;
+    position: absolute;
+}
+/*-------------estilização das img menu------------*/
+.img_menu{
+width: 150px;
+border-radius: 20px;
+}
+/*-------------estilização dos blocos de card do menu------------*/
+.option{
+    background-color: rgba(47, 131, 45, 0.686);
+    padding: 6px;
+    border-radius: 20px;
+    margin: 10px;
+}
+/*-------------estilização do texto menu------------*/
+.text_menu{
+    text-align: center;
+    font-family: "Pirata One", system-ui;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+/*-------------estilização do botão de fechar card------------*/
+.img_exit{
+    width: 50px;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 280px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 30px;
+}
+
+
+
+
