@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rélogio</title>
+</head>
+<style>
+    body{
+        background-color: #4c9ef1;
+    }
+    .block{
+        margin: auto;
+        margin-top: 8%;
+        width: 1000px;
+        height: 500px;
+        border-radius: 8px;
+        box-shadow: 3px 5px rgb(40, 40, 40);
+        background-color: antiquewhite;
+        display: flex;
+    
+    }
+    .img{
+        width: 400px;
+        height: 500px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 400px 500px;
+        border-radius: 8px 0px 0px 8px;
+
+    }
+    .time{
+        width: 600px;
+        background-color: #77bbbb;
+        height: 500px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 26px;
+        color: white;
+        border-radius: 0px 8px 8px 0px;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+
+
+    }
+    #semana{
+        width: 300px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #F6F1D1;
+        color: black;
+        margin-left: 150px;
+        line-height: 0px;
+        box-shadow: 3px 5px rgb(54, 54, 54);
+        
+    
+    }
+    #times{ width: 300px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #F6F1D1;
+        color: black;
+        margin-left: 150px;
+        line-height: 0px;
+        box-shadow: 3px 5px rgb(54, 54, 54);
+    }
+</style>
+<body>
+    <div class="block">
+        <div class="img" id="img_fundo"></div>
+
+        <div class="time">
+            <div id="times"><p id="horas" style="display: inline-block;">--</p> : <p id="minutos" style="display: inline-block;">--</p> : <p id="segundos" style="display: inline-block;">--</p></div>
+            <div id='semana'><p id="diaSemana">aqui vai o dia da semana</p></div>
+            <p>Fortaleza-ce Brasil</p>    
+        </div>
+
+    </div>
+    <script src="Rélogio.js"></script>
+     
+</body>
+</html>
