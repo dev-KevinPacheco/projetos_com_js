@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+<body>
+
+    <h1>calculadora online de IMC</h1>
+    <!--bloco geral-->
+    <div class="corpo">
+
+        <!--bloco da calculadora-->
+        <div id="calculadora">
+
+            <!--input peso-->
+            <p class="legenda">informe o seu peso em quliogramas</p>
+            <input type="number" placeholder="Ex: 70kg" id="peso">
+            <br><br>
+
+            <!--input altura-->
+            <p class="legenda">informe a sua altura em metros</p>
+            <input type="number" placeholder="Ex: 1.75m" id="altura">
+            <br><br><br>
+
+            <!--botão-->
+            <input type="button" value="calcular" id="calcular" onclick="calcular()">
+            <br><br>
+            
+            <!--bloco dos resultados-->
+            <div id="resposta">
+                <div class="respos" id="imc">seu imc é <p id="res_imc"></p></div>
+                <div class="respos" id="p_ideal">seu peso ideal é <p id="res_p_ideal"></p></div>
+                <div class="respos" id="escala"><p id="res_escala">xxx</p><div id="color"></div></div>
+            </div>
+
+        </div>
+
+        <!--bloco da img de fundo -->
+        <div id="img"><img src="img_fundo.webp" alt=""></div>
+    </div>
+    
+
+<script src="calculadora.js"></script>    
+</body>
+</html>
