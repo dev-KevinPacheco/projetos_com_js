@@ -1,0 +1,113 @@
+.insta{
+    margin: auto;
+    margin-left: 47%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+body{
+    background-color: #00A7E1;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+/*estilização do bloco principal*/
+
+.bloco_princi{
+    background-color: #d1d1d1;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    padding: 20px;
+    border-radius: 13px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*estilização do campo input*/
+
+#campo_text{
+    background-color: #e1e1e1;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*estilização dos botões incluir e finalizar*/
+
+#incluir{
+    width: 110px;
+    height: 29px;
+    padding: 5px;
+    border-radius: 8px;
+}
+#incluir:hover{
+    background-color: rgba(93, 179, 244, 0.655);
+    box-shadow: 2px 2px black;
+}
+#finalizar{
+    width: 110px;
+    height: 29px;
+    padding: 5px;
+    border-radius: 8px;
+}
+#finalizar:hover{
+    background-color: rgba(93, 179, 244, 0.655);
+    box-shadow: 2px 2px black;
+}
+
+/*estilização do painal de rotorno */
+
+#caixa_texto{
+    background-color: #e1e1e1;
+    width: 320px;
+    height: 90px;
+    border-radius: 8px;
+    padding: 10px;
+    size: 6;
+}
+
+/*estilização do bloco de respostas */
+
+#resposta{
+    display: none;
+    background-color: #d1d1d1;
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(59, 59, 59);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.215);
+    padding: 7px;
+    margin-top: 80px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*estilização do botão de fechar o bloco de resposta */
+
+#close{
+    background-color: rgba(255, 255, 255, 0.393);
+    width: 40px;
+    height: 40px;
+    border-radius: 0px 10px 0px 10px;
+    position: absolute;
+    margin-left: 268px;
+    margin-top: -228px;
+    border: none;
+}
+#close:hover{
+    background-color: rgb(215, 67, 67);
+}

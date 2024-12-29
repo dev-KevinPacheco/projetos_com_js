@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto curso em video</title>
+    <link rel="stylesheet" href="curso_em_video.css">
+</head>
+
+<body>
+    <p class="insta">@dev_kevinn</p>
+
+    <!--bloco principal-->
+    <div class="bloco_princi">
+        <h2>Escolha Numeros entre 1 e 100</h2>
+        <input type="number" name="" id="campo_text" placeholder=" digite aqui o número">
+        <input type="button" value="Adicionar" id="incluir" onclick="incluir()">
+        <br><br>
+        <select name="" id="caixa_texto" size="6"></select>
+        <br><br>
+        <input type="button" value="Finalizar" id="finalizar" onclick="finalizar()">
+    </div>
+    <!--bloco de resposta-->
+    <div id="resposta">
+        <h3 id="r1" style="font-family: 'Times New Roman', Times, serif;">rep.1</h3>
+        <h3 id="r2" style="font-family: 'Times New Roman', Times, serif;">rep.2</h3>
+        <h3 id="r3" style="font-family: 'Times New Roman', Times, serif;">rep.3</h3>
+        <h3 id="r4" style="font-family: 'Times New Roman', Times, serif;">rep.4</h3>
+        <h3 id="r5" style="font-family: 'Times New Roman', Times, serif;">rep.5</h3>
+        <input type="button" value="X" id="close" onclick="location.reload()">
+    </div>
+
+    <script src="curso_em_video.js"></script>
+</body>
+</html>
