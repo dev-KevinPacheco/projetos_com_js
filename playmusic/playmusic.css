@@ -1,0 +1,75 @@
+/*estilização da capa de fundo*/
+body{
+    background-image: url("img/teste_capa.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*estilização dos botões e da barra de progresso*/
+#forward{
+    width: 30px;
+}
+#backward{
+    width: 30px;
+}
+#play_pause{
+    width: 25px;
+}
+#progresso{
+    background-color: black;
+    width:360px ;
+    height: 4px;
+    border-radius: 1px;
+    margin-left: 18px;
+}
+.buttons{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+/*estilização do bloco principal*/
+.corpo{
+    height:500px ;
+    width: 400px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.204);
+}
+/*estilização do titulo da musica e cantor */
+.name_music{
+    height: auto;
+    text-align: center;
+    margin-top: 250px;
+}
+
+/*estilização dos marcadores de tempo */
+#duraçao{
+    margin-left: 25px;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*estilização da capa principal */
+.img{
+    position: absolute;
+}    
+#capa{
+    width: 300px;
+    margin-top: -70px;
+    margin-left: 50px;
+    border-radius: 15px;
+    box-shadow: 5px 4px  rgba(0, 0, 0, 0.249);
+
+}

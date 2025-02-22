@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayMusic</title>
+    <link rel="stylesheet" href="playmusic.css">
+</head>
+<body>
+
+    <!--corpo do projeto -->
+    <div class="corpo">
+        <div class="img"> <img src="img/capa.racionais.jpg" alt="" id="capa"></div>
+        <div class="name_music">
+            <h2 id="musica">Diario de um Detento</h2 >
+            <h3 id="cantor">Racionais</h3>
+        </div>
+        <!--bloco dos contorles -->
+        <div class="controls">
+
+            <!--marcadores de tempo -->
+            <div class="time">
+                <p id="tempo">00:00</p>
+                <p id="duracao">7:32</p>
+            </div>
+            
+            <!--barra de progresso -->
+            <div id="progresso"></div>
+
+            <!--botões de pause, proximo e anterior -->
+            <div class="buttons">
+                <img src="img/backward.png" alt="" id="backward" onclick="anterior()">
+                <img src="img/play.png" alt="" id="play_pause" onclick="tocar()">
+                <img src="img/forward.png" alt="" id="forward" onclick="proxima()">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="playmusic.js"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
