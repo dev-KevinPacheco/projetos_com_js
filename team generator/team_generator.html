@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="select_teams">
+            <button class="button" id="two_teams" onclick="creat_two_teams(array_name)">II Equipes</button>
+            <button class="button" id="three_teams" onclick="creat_three_teams(array_name)">III Equipes</button>
+        </div>
+
+        <div id="main_box">
+            <input type="text" id="get_name" placeholder="Tag mane" required minlength="3">
+            <br>
+            <input type="button" value="Cadastrar" id="register" onclick="get_name()">
+            <br>
+            <input type="button" value="Exibir nomes" id="show_names" onclick="show_names()">
+            <br>
+            <input type="button" value="Finalizar" id="finish" onclick="finalizar(historico_seleção[historico_seleção.length - 1])">
+        </div>
+    </div>
+
+    <div id="cadastrados">
+        <button id="close_show_names" onclick="fechar_div()">X</button>
+        <div id="all_players"></div>
+    </div>
+
+    <div id="results">
+        <button id="close_view" onclick="fechar_view()">X</button>
+    </div>
+</body>
+</html>

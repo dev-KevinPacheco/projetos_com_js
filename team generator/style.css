@@ -1,0 +1,213 @@
+/* ----------------------------------------------------------
+   ESTILO GERAL
+---------------------------------------------------------- */
+body {
+    background-image: url(img/fundo_militar02.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* ----------------------------------------------------------
+   CONTAINER PRINCIPAL
+---------------------------------------------------------- */
+#main {
+    margin: auto;
+    margin-top: 70px;
+    width: 500px;
+    height: 600px;
+    background-color: #292929;
+    border-radius: 10px;
+}
+
+/* ----------------------------------------------------------
+   SELEÇÃO DE TIMES
+---------------------------------------------------------- */
+#select_teams {
+    height: 150px;
+    width: 500px;
+    background-color: #414539;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.button {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif, Courier, monospace;
+    background-color: #353535;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff0000b0;
+}
+
+/* ----------------------------------------------------------
+   FORMULÁRIO PRINCIPAL
+---------------------------------------------------------- */
+#main_box {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#get_name {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+#register,
+#show_names,
+#finish {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+#register:hover,
+#show_names:hover,
+#finish:hover {
+    background-color: rgba(255, 0, 0, 0.692);
+}
+
+/* ----------------------------------------------------------
+   SEÇÃO DE JOGADORES CADASTRADOS
+---------------------------------------------------------- */
+#cadastrados {
+    margin: auto;
+    margin-top: 50px;
+    background-color: #292929;
+    width: 1000px;
+    height: 610px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    padding-top: 10px;
+    display: none;
+}
+
+#cadastrados > p {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#close_show_names {
+    position: absolute;
+    left: 970px;
+    top: -10px;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#all_players {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#all_players > div {
+    display: flex;
+    align-items: start;
+    background-color: #414539;
+    color: white;
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    gap: 120px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+#all_players > div > img {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* ----------------------------------------------------------
+   RESULTADOS
+---------------------------------------------------------- */
+#results {
+    width: 100%;
+    height: 97vh;
+    background-color: rgba(77, 77, 77, 0.74);
+    display: none;
+    margin: auto;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#close_view {
+    position: absolute;
+    left: 1485px;
+    top: 10px;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#results > div {
+    width: 450px;
+    height: max-content;
+    background-color: #313131;
+    border: 2px solid black;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#results > div > div {
+    display: flex;
+    align-items: start;
+    background-color: #414539;
+    color: white;
+    width: 415px;
+    height: 50px;
+    border-radius: 10px;
+    gap: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+#results > div > div > img {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    object-fit: cover;
+}
