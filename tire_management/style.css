@@ -1,0 +1,391 @@
+/* -----------------------------------------------------------------------------
+                ESTILIZAÇÃO MENU PRICIPAL DE NAVEGAÇÃO
+----------------------------------------------------------------------------- */
+
+body{
+    background-image: url(img/WhatsApp\ Image\ 2025-11-18\ at\ 02.29.09.jpeg);
+    overflow-y: hidden;
+}
+
+#main{
+    width: 1150px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+#img_div_left{
+    width: 550px;
+    height: 600px;
+    background: linear-gradient( 
+        rgba(0, 0, 0, 0.185),   
+        rgba(0, 0, 0, 0.224)   
+    ), 
+    url("img/maraponga.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#menu_div_right{
+padding-top: 20px;
+}
+
+.menu{
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    margin-left: 90px;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.menu:hover{
+    background-color: #ffffffce;
+    transform: scale(1.02);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------
+                ESTILIZAÇÃO CADASTRO DE PNEUS
+----------------------------------------------------------------------------- */
+
+#main_cadastro{
+    width: 1150px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    display: none;
+}
+.cabeçalho{
+   text-align: center;
+   letter-spacing: 2px;
+   font-size: 18px;
+   
+
+
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gets{
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+#get_data{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    text-align: center;
+}
+#cadastrar{
+    position: relative;
+    width: 250px;
+    height: 30px;
+    left: 420px;
+    background: #3a7afe;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#cadastrar:hover {
+    background: #1e5efd;
+}
+
+#get_info{
+    width: 900px;
+    height: 170px;
+    margin-left: 100px;
+    padding-left: 20px;
+    border: none;
+}
+label{
+ font-size: 14px;
+ color: rgb(0, 0, 0);
+}
+select{
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.form_input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+}
+#modelo, #banda_rodagem{
+    margin-left: 150px;
+}
+#close_main_cadastro{
+    width: 40px;
+    position: relative;
+    left: 1110px;
+    top: 0px;
+}
+
+
+/* -----------------------------------------------------------------------------
+                ESTILIZAÇÃO ESTOQUE/ARMAENAMENTO
+----------------------------------------------------------------------------- */
+
+#main_estoque{
+    width: 1150px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    display: none;
+    overflow-y: auto;
+}
+#close_main_estoque{
+    width: 40px;
+    position: fixed;
+    left: 1300px;
+    top: 50px;
+}
+#alert{
+    text-align: center;
+    line-height: 500px;
+}
+
+table {
+    width: max-content;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+    table-layout: fixed; /* apenas UMA vez */
+}
+
+thead {
+    background: #2c3e50;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+th {
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;   /* remove borda que desalinha */
+    white-space: nowrap;
+    text-align: center; /* agora igual ao td */
+}
+
+td {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap; /* impede quebra de linha */
+}
+
+tbody tr {
+    transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+    background: #f5f7fa; /* leve hover cinza */
+}
+
+
+
+
+/* -----------------------------------------------------------------------------
+                ESTILIZAÇÃO MONTAGEM
+----------------------------------------------------------------------------- */
+
+
+
+#main_montagem {
+    width: 1150px;
+    min-height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    display: none;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Botão X */
+#close_main_montagem {
+    width: 40px;
+    position: relative;
+    left: 1130px;
+    top: -20px;
+    cursor: pointer;
+}
+
+/* COLOCADO e RETIRADO lado a lado */
+#form_montagem {
+    display: flex;
+    gap: 25px;
+    margin-top: 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+#colocado, #retirado {
+    width: 48%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    gap: 10px;
+}
+
+#colocado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#retirado{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Inputs padrão */
+.input_montagem {
+    display: flex;
+    flex-direction: column;
+}
+#get_motivo{
+    height: 140px;
+    width: 500px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Botão Finalizar */
+#enviar_form_montagem {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #3a7afe;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#enviar_form_montagem:hover {
+    background: #1e5efd;
+}
+
+
+/* -----------------------------------------------------------------------------
+                ESTILIZAÇÃO HISTORICO
+----------------------------------------------------------------------------- */
+
+#main_hi{
+    width: 1150px;
+    min-height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    display: none;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Botão X */
+#close_main_historico {
+    width: 40px;
+    position: relative;
+    left: 1130px;
+    top: -20px;
+    cursor: pointer;
+}
+
+#table_historico {
+    width: 1100px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+    table-layout: fixed; /* apenas UMA vez */
+}
+
+.th_historico {
+    background: #2c3e50;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+th {
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;   /* remove borda que desalinha */
+    white-space: nowrap;
+    text-align: center; /* agora igual ao td */
+}
+.more_information{
+    width: 20px;
+}
+
+.fa-magnifying-glass{
+    cursor: pointer;
+}
+
+td {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap; /* impede quebra de linha */
+}
+
+
+tbody tr:hover {
+    background: #f5f7fa; /* leve hover cinza */
+}
+

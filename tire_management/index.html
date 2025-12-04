@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ------------------------------------------------------------------------
+                       MENU PRINCIPAL DE NAVEGAÇÃO
+    -------------------------------------------------------------------------->
+    <div id="main">
+        <div id="img_div_left"></div>
+
+        <div class="menu_div_right">
+            <div id="cadastro" class="menu">Cadastro de pneus</div>
+            <div id="estoque" class="menu">Estoque</div>
+            <div id="montagem" class="menu">Montagem</div>
+            <div id="historico" class="menu">Histórico</div>
+        </div>
+    </div>
+
+
+        <!-- ------------------------------------------------------------------------
+                       CADASTRO DE PNEUS
+    -------------------------------------------------------------------------->
+
+
+    <div id="main_cadastro">
+        
+        <button id="close_main_cadastro">X</button>
+
+        <p class="cabeçalho">Cadastro de pneus</p>
+        <form action="" id="form">
+
+            <div class="form_input">
+            <label for="D_compra">Data aquisição</label>
+            <input type="date" name="D_compra"  id="get_data" required>
+            </div>
+
+            <div class="form_input">
+            <label for="quant">Quantidade adquirida</label>
+            <input type="number" name="quant" class="gets" id="get_qtd" min="0" required>
+            </div>
+
+            <div class="form_input">
+            <label for="DOT">DOT/Matricula</label>
+            <input type="text" name="DOT" class="gets" id="get_DOT" required>
+            </div>
+            
+            <div class="form_input">
+            <label for="marca_fabricante">Marca/fabricante</label>
+            <input type="text" name="marca_fabricante" class="gets" id="get_marca_fabricante" required>
+            </div>
+
+            <div class="form_input" id="modelo">
+            <label for="modelo">Modelo</label>
+            <select id="get_modelo" name="modelo">
+                <option value="" disabled selected>-</option>
+                <option value="X Incity Z">X Incity Z</option>
+            </select>
+            </div>
+
+            <div class="form_input">
+            <label for="estado">Estado</label>
+            <select name="estado" id="get_estado" required>
+                <option value="" disabled selected >-</option>
+                <option value="novo">Novo</option>
+                <option value="1° recapagem">1° recapagem</option>
+                <option value="2° recapagem">2° recapagem</option>
+            </select>
+            </div>
+
+            <div class="form_input">
+            <label for="medidas">Medidas</label>
+            <select name="medidas" id="get_medidas">
+                <option value="" selected disabled>-</option>
+                <option value="215/75R17.5">215/75R17.5</option>
+                <option value="225/75R16">225/75R16</option>
+                <option value="275/80R22.5">275/80R22.5</option>
+                <option value="295/80R22.5">295/80R22.5</option>
+            </select>
+            </div>
+            
+            <div class="form_input" id="banda_rodagem">
+            <label for="B_rodagem">Banda de rodagem</label>
+            <input type="text" name="B_rodagem" class="gets" id="get_band_rodagem" required>
+            </div>
+           
+            <div class="form_input">
+            <label for="capacidade">Capacidade</label>
+            <input type="text" name="capacidade" class="gets" id="get_capacidade_carga" required>
+            </div>
+            
+            <div class="form_input">
+            <label for="profundidade">Profundidade (mm)</label>
+            <input type="number" name="profundidade" class="gets" id="get_profundidade" min="0" required>
+            </div>
+            
+            <input type="text" name="info" id="get_info" placeholder="Observações ou informações relevantes ">
+            
+            <input type="submit" value="Cadastrar" id="cadastrar">
+        </form>
+    </div>
+
+
+     <!-- ------------------------------------------------------------------------
+                       ESTOQUE/ARMAZENAMENTO
+    -------------------------------------------------------------------------->
+
+    <div id="main_estoque">
+        <button id="close_main_estoque">X</button>
+
+        <p class="cabeçalho">Estoque</p>
+       
+        <table id="table_estoque" >
+            <thead>
+                <tr>
+                    <th>Data compra</th>
+                    <th>Marca/Fabricante</th>
+                    <th>Dot</th>
+                    <th>Modelo</th>
+                    <th>Estado</th>
+                    <th>Medidas</th>
+                    <th>Profundidade</th>
+                    <th>Banda de rolag</th>
+                    <th>Capacidade Carga</th>
+                    <th>Qtd estoque</th>
+                </tr>
+            </thead>
+
+            <tbody id="body_table">
+
+            </tbody>
+        </table>
+    </div>
+
+ <!-------------------------------------------------------------------------
+                       MONTAGEM / MANUTENÇÃO
+---------------------------------------------------------------------------->
+        
+
+    <div id="main_montagem">
+
+        <button id="close_main_montagem">X</button>
+
+        <p class="cabeçalho">Montagem</p>
+
+        <form action="" id="form_montagem">
+            <div id="colocado">
+
+                <div class="input_montagem">
+                    <label for="N_fogo">Veiculo</label>
+                    <input type="text" name="N_fogo" id="get_veiculo" class="gets" placeholder="26.211"> 
+                </div>
+
+                <div class="input_montagem">
+                    <label for="posicao">Posição/Colocado</label>
+                    <select name ='posicao' id="get_posicao_colocado" class="gets">
+                        <option value="" selected disabled>-</option>
+                        <option value="Dianteiro-direito">Dianteiro Direito</option>
+                        <option value="Dianteiro-esquerdo">Dianteiro Esquerdo</option>
+                        <option value="Traseiro-direito-externo">Traseiro Direito Externo</option>
+                        <option value="Traseiro-direito-interno">Traseiro Direito Interno</option>
+                        <option value="Traseiro-esquerdo-externo">Traseiro Esquerdo Externo</option>
+                        <option value="Traseiro-esquerdo-interno">Traseiro Esquerdo Interno</option>
+                    </select>
+                </div>
+
+                <div class="input_montagem">
+                    <label for="data">Data da troca</label>
+                    <input type="date" name="data" id="get_data_troca" class="gets">
+                </div>
+
+                <div class="input_montagem">
+                    <label for="mecanico">Mecanico</label>
+                    <input type="text" name="mecanico" id="get_mecanico" class="gets">
+                </div>
+
+                 <div class="input_montagem">
+                    <label for="DOT">DOT/Matricula</label>
+                    <input type="text" name="DOT" class="gets" id="get_DOT_colocado" oninput="busca_dot()" required >
+                </div>
+
+                 <div class="input_montagem">
+            <label for="estado">Estado</label>
+            <select name="estado" id="get_estado_montagem" required class="gets">
+                <option value="" disabled selected >-</option>
+                <option value="novo">Novo</option>
+                <option value="1° recapagem">1° recapagem</option>
+                <option value="2° recapagem">2° recapagem</option>
+            </select>
+            </div>
+
+            <div class="input_montagem" >
+            <label for="B_rodagem">Banda de rodagem</label>
+            <input type="text" name="B_rodagem" class="gets" id="get_band_rodagem_montagem" required>
+            </div>
+
+            <div class="input_montagem">
+            <label for="capacidade">Capacidade</label>
+            <input type="text" name="capacidade" class="gets" id="get_capacidade_carga_montagem" required>
+            </div>
+            
+            <div class="input_montagem">
+            <label for="profundidade">Profundidade (mm)</label>
+            <input type="number" name="profundidade" class="gets" id="get_profundidade_montagem" min="0" required>
+            </div>
+
+
+                
+            </div>
+
+
+
+            <div id="retirado">
+
+                 <div class="input_montagem">
+                    <label for="posicao">Posição/Retirado</label>
+                    <select name ='posicao' id="get_posicao_retirado" class="gets">
+                        <option value="" selected disabled>-</option>
+                        <option value="Dianteiro-direito">Dianteiro Direito</option>
+                        <option value="Dianteiro-esquerdo">Dianteiro Esquerdo</option>
+                        <option value="Traseiro-direito-externo">Traseiro Direito Extrno</option>
+                        <option value="Traseiro-direito-interno">Traseiro Direito Interno</option>
+                        <option value="Traseiro-esquerdo-externo">Traseiro Esquerdo Extrno</option>
+                        <option value="Traseiro-esquerdo-interno">Traseiro Esquerdo Interno</option>
+                    </select>
+                </div>
+
+                 <div class="input_montagem">
+                    <label for="DOT">DOT/Matricula</label>
+                    <input type="text" name="DOT" class="gets" id="get_DOT_retirado" required >
+                </div>
+
+                 <div class="input_montagem">
+            <label for="profundidade">Profundidade (mm)</label>
+            <input type="number" name="profundidade" class="gets" id="get_profundidade_retirado" min="0" required>
+            </div>
+
+            <div class="input_montagem">
+                <label for="motivo">Motivo da Troca</label>
+                <input type="text" name="motivo" id="get_motivo">
+            </div>
+
+            <input type="submit" value="Finalizar" id="enviar_form_montagem">
+
+            </div>
+        </form>
+    </div>
+
+
+
+ <!-------------------------------------------------------------------------
+                       HISTORICO
+---------------------------------------------------------------------------->    
+
+ <div id="main_hi">
+        <button id="close_main_historico">X</button>
+
+        <p class="cabeçalho">Historico</p>
+       
+        <table id="table_historico" >
+            <thead class="th_historico">
+                <tr>
+                    <th class="more_information"></th>
+                    <th>Veiculo</th>
+                    <th>Data da troca</th>
+                    <th>Posição</th>
+                    <th>Mecanico</th>
+                </tr>
+            </thead>
+
+            <tbody id="body_table_historico">
+
+            </tbody>
+        </table>
+    </div>       
+
+
+</body>
+</html>
+
+
