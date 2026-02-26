@@ -1,0 +1,443 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ==================================================================
+            EDIÇÃO DO BLOCO ESQUERDO DO main
+=====================================================================*/
+
+.left_block_class{
+    width: 500px;
+    height: 100vh;
+    background-color: #0c1621;
+}
+
+#photo_logo{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#photo{
+    width: 180px;
+    margin-left: -20px;
+}
+
+#name{
+    font-size: 20px;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 45px;
+    margin-left: -30px;
+    color: white;
+    font-weight: 700;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover{
+    background-color: rgba(161, 161, 161, 0.559);
+    transform: translateY(-2px);
+}
+
+.button:hover .fa-solid{
+    color: #09bde1;
+    transform: translateX(6px);
+}
+
+.fa-solid{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.name_menu{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#user_photo{
+    width: 50px;
+    border-radius: 5px;
+}
+
+.user{
+    margin-left: 20px;;
+    display: flex;
+    gap: 20px;
+    color: white;
+    position: absolute;
+    top: 630px;
+}
+
+.status{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.status_color{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(53, 202, 53);
+    border-radius: 50px;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.bottom_line{
+    border: none;
+    height: 2px;
+    background-color: #ffffff; 
+    margin-top: 250px;
+}
+
+
+
+/* ==================================================================
+            EDIÇÃO DO BLOCO DIREITO DO MAIN
+=====================================================================*/
+
+
+.right_block_class{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.902);
+    overflow-y: auto;
+}
+
+#block_logo{display: block;}
+
+#photo_right_block{
+    display: flex;
+    margin: auto;
+    width: 380px;
+    margin-top: 150px;
+    opacity: 0.5;
+}
+
+#name_right_block{
+    font-size: 22px;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-left: 470px;
+    margin-top: -50px;
+    opacity: 0.3;
+}
+
+
+/* ==================================================================
+            EDIÇÃO DO BLOCO QUICK SEARCH
+=====================================================================*/ 
+
+
+ #Quick_search_block{
+    width: 100%;
+    display: none;
+    background-color: #ffffff;
+ }
+
+#map{
+  width: 100%;
+  height: 400px;   /* ajuste aqui se quiser maior */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  display: block;
+}
+
+.input_search{
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+#butt_calcular{
+    width: 200px;
+    margin: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+#butt_calcular:hover {
+    background-color: #008ff5;
+    transform: translateY(-4px);
+    color: white;
+    font-size: 14px;
+}
+
+#butt_calcular:active {transform: translateY(0);}
+
+#inputs{
+    width: 93%;
+    height: 230px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(135deg, #2f4564, #4974a059);
+    padding: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.285);
+}
+
+.label_input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#resultado_pesquisa {
+width: 500px;
+height: 90px;
+margin: auto;
+border-radius: 5px;
+text-align: center;
+background-color: #ffffff; 
+display: none;
+}
+
+
+
+
+/* ==================================================================
+            EDIÇÃO DO BLOCO CALL TOW
+=====================================================================*/
+
+ #call_tow_block{
+    width: 96%;
+    height: 652px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #2f4564e2, #4974a05c);
+    padding: 20px;
+    display: none;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.form_input{
+    width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.form_input:hover{border-color: #888;}
+
+.form_input:focus{
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.2);
+}
+
+.title_form{
+    text-align: center;
+    font-size: 17px;
+    margin: 20px 0;
+    color: white;
+}
+
+#get_info_car,#get_info_collection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#split_line{margin: 40px 0;}
+
+.input_obs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    padding: 8px;
+    outline: none;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+#form_submit{
+    display: block;
+    margin: 40px auto;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a6dcb;
+    color: white;
+    cursor: pointer;
+}
+
+#form_submit:hover{
+    transform: translatey(-6px);
+    background-color: #006aff;
+}
+
+/* ==================================================================
+            EDIÇÃO DO BLOCO ACTIVITY HISTORY
+=====================================================================*/
+#Activity_history_block{
+    display: none;
+    flex-direction: column;
+}
+
+#head_His{
+    background: linear-gradient(135deg, #2f4564, #4974a0);
+    height: 150px;
+}
+
+
+ h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+th, td {
+    padding: 12px;
+    margin-left: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+th {
+    background-color: #264a73e1;
+    color: white;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {background-color: #e0e0e0;}
+
+.fa-pen{
+    color: rgb(48, 48, 161);
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.fa-pen:hover{color:#09bde1 ;}
+
+/* ==================================================================
+            EDIÇÃO DO BLOCO FINAL REPORT
+=====================================================================*/
+
+#Final_report_block{
+    display: none;
+    flex-direction: column;
+}
+
+#up_block{background: linear-gradient(135deg, #2f4564, #4974a0);}
+
+#up{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.up_input{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.search_input{
+    width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#Search-date{
+    display: block;
+    margin: 40px auto;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4079c9;
+    color: white;
+    cursor: pointer;
+}
+#Search-date:hover{
+    background-color: #006aff;
+}
+
+#split-line{
+  height: 3px;
+  background-color: rgba(109, 109, 109, 0.34);
+  border: none;
+  width: 100%; 
+}
+
+#down{
+    height: 400px;
+    display: none;
+}

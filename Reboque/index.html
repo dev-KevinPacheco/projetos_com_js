@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTow Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 
+========================================================
+                 BLOCO MAIN + MENU DE PESQUISA 
+========================================================-->
+
+    <div id="left_block_id" class="left_block_class">
+
+        <div id="photo_logo">
+            <img src="img/logo_empresa.png" id="photo" alt="">
+            <p id="name">AutoTow Solutions</p>
+        </div>
+
+        <hr>
+
+        <div id="menu">
+
+            <div id="Quick_search" class="button">
+                <i class="fa-solid fa-road"></i>
+                <p class="name_menu">Quick Search</p>
+            </div>
+
+             <div id="Call_tow" class="button">
+                <i class="fa-solid fa-bell"></i>
+                <p class="name_menu">Call Tow</p>
+            </div>
+
+             <div id="Activity_history" class="button">
+                <i class="fa-solid fa-folder"></i>
+                <p class="name_menu">Activity History</p>
+            </div>
+
+             <div id="Final_report" class="button">
+                <i class="fa-solid fa-chart-column"></i>
+                <p class="name_menu">Final Report</p>
+            </div>
+
+        </div>    
+
+
+        <hr class="bottom_line">
+
+        <div class="user">
+            <p class="name_user"> User : Luna G.</p>
+            
+            <div class="status">
+                <p> Status : Online</p>
+                <div class="status_color"></div>
+            </div> 
+        </div>
+
+    </div>
+
+    <div id="right_block_id" class="right_block_class">
+
+        <div id="block_logo">
+            <img src="img/logo_empresa.png" id="photo_right_block" alt="">
+            <p id="name_right_block">AutoTow Solutions</p>
+        </div>
+
+
+<!-- 
+========================================================
+        BLOCO QUICK SERACH - PESQUISA POR ENDEREÇO
+========================================================-->
+
+        <div id="Quick_search_block" class="tela">
+            <div id="map"></div>
+
+            <div id="inputs">
+            <div class="label_input"><label for="location">Localization</label>
+                <br>
+            <input type="text" name="location" id="location" class="input_search" placeholder="R.antonio pereira, 227, fortaleza">
+            </div>
+            
+            <div id="resultado_pesquisa">
+                <p id="quilometragem">Distanca total : </p>
+                <p id="tempo">Tempo gasto : </p>
+            </div>
+           
+
+            <input type="button" value="Calculate Distance" id="butt_calcular">
+            </div>
+            
+
+        </div>
+
+
+<!-- 
+========================================================
+        BLOCO CALL TOW - FORMULARIO DE CADASTRO
+========================================================-->
+
+
+<div id="call_tow_block" class="tela">
+
+        <p class="title_form">Customer Information</p>
+
+        <form id="form_callTow">
+
+            <div id="get_info_car">
+
+                <div class="inputs">
+                <label>Phone Number</label> 
+                <input type="tel" class="form_input" placeholder="(xx) xxxxx-xxxx" required id="phone_number_id">
+                </div>
+
+                <div class="inputs">
+                <label>Email</label>  
+                <input type="email" class="form_input" required id="Email_id">
+                </div>
+
+                <div class="inputs">
+                <label>Full Name</label> 
+                <input type="text" class="form_input" required id="full_name_id">
+                </div>
+
+                <div class="inputs">
+                <label>License Plate</label>  
+                <input type="text" class="form_input" required placeholder="kgn0e46" id="license_plate_id">
+                </div>
+
+                <div class="inputs">
+                <label>Brand / Model</label>  
+                <input type="text" class="form_input" required placeholder="chevrolet/corsa" id="brand_model_id">
+                </div>
+
+                <div class="inputs">
+                <label>Year</label>   
+                <input type="number" min="1930" max="2027" class="form_input" required placeholder="2008" id="year_id">
+                </div>
+
+            </div>
+
+        <hr id="split_line">
+
+        <p class="title_form">Collection Information</p>
+
+            <div id="get_info_collection">
+
+                <div class="inputs">
+                <label>Collection Location</label>
+                <input type="text" class="form_input" required id="collection_location_id" placeholder="BAIRRO/CIDADE">
+                </div>
+
+                <div class="inputs">
+                <label>Delivery Location</label>
+                <input type="text" class="form_input" required id="delivery_location_id" placeholder="BAIRRO/CIDADE">
+                </div>
+
+                <div class="inputs">
+                <label>Collection Time</label>
+                <input type="datetime-local" class="form_input" required id="collection_time_id">
+                </div>
+
+                <div class="inputs">
+                <label>Delivery Time</label>
+                <input type="datetime-local" class="form_input" required id="delivery_time_id">
+                </div>
+
+                <div class="inputs">
+                <label>Amount To Pay</label>
+                <input type="number" class="form_input" required id="amount_to_pay_id">
+                </div>
+
+                <div class="inputs">
+                <label>Payment Method</label>
+                <select class="form_input" required id="payment_method_id">
+                <option value="">-</option>
+                <option>Money</option>
+                <option>Card</option>
+                </select>
+                </div>
+
+            </div>
+
+            <div class="input_obs">
+            <label>Observation</label>
+            <textarea id="observation_id"></textarea>
+            </div>
+
+            <input type="submit" value="Send Form" id="form_submit">
+
+            </form>
+        
+        </div>
+
+<!-- ========================================================
+        BLOCO Activity History - TABELA DE CHAMADAS
+========================================================-->
+
+<div id="Activity_history_block">
+
+    <div id="head_His"><h1>Records</h1></div>
+
+    <table id="table_History">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Locense Plate</th>
+                <th>Brand/Model</th>
+                <th>Full Name</th>
+                <th>Collection Location</th>
+            </tr>
+        </thead>
+
+        <tbody id="regi">
+
+        </tbody>
+    </table>
+</div>
+
+
+
+<div id="Final_report_block">
+
+    <div id="up_block">
+    <h1 style="color: white;">Final Report</h1>
+
+    <div id="up">    
+
+    <div class="up_input">
+        <label for="first-date">First-date</label>
+        <input type="date" name="First-date" id="First-date_id" class="search_input">
+    </div>
+
+    <div class="up_input">
+        <label for="Last-date">last-date</label>
+        <input type="date" name="Last-date" id="Last-date_id" class="search_input">
+    </div>
+
+    </div>
+
+     <input type="submit" value="Search" id="Search-date"></div>
+
+
+
+
+    <div id="down">
+        <table id="Activity">
+        <thead>
+            <tr>
+               <th></th>
+                <th>Locense Plate</th>
+                <th>Brand/Model</th>
+                <th>Full Name</th>
+                <th>Collection Location</th>
+            </tr>
+        </thead>
+
+        <tbody id="regi_Act">
+
+        </tbody>
+
+    </table>
+
+    <table id="Final_report">
+        <thead>
+            <tr>
+                <th>Distance traveled</th>
+                <th>Revenue</th>
+            </tr>
+        </thead>
+
+        <tbody id="regi_Fin">
+
+        </tbody>
+    </table>
+    </div>
+    
+
+</div>
+
+
+    </div>
+    
+</body>
+</html>
